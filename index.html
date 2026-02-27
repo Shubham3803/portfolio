@@ -28,9 +28,10 @@
       </li>
     </ul>
 
-    <button
+    
+    <a href="mailto:Work.Shubham1601@gmail.com"
       class="hidden md:block px-[20px] text-[#1c1c1c] text-[16px] py-[12px] bg-[#6886C5] rounded-[10px] border-[2.5px] border-[#6886C5] hover:bg-white ">Contact
-      me</button>
+      me</a>
     <div class="md:hidden">
       <a class="text-4xl" href="#">&#8801</a>
     </div>
@@ -69,11 +70,11 @@
           professional web designer!</div>
 
         <div class="flex gap-[20px] justify-center sm:justify-start">
-          <button
-            class=" md:block px-[20px] text-[#1c1c1c] text-[16px] py-[12px] bg-[#6886C5] rounded-[10px] border-[2.5px] border-[#6886C5] hover:bg-white ">Contact
-            Me</button>
+            <a href="mailto:Work.Shubham1601@gmail.com"
+              class="hidden md:block px-[20px] text-[#1c1c1c] text-[16px] py-[12px] bg-[#6886C5] rounded-[10px] border-[2.5px] border-[#6886C5] hover:bg-white ">Contact
+              me</a>
 
-          <a href="https://drive.google.com/file/d/1b7-AwFl-ii4PSKJyjF_nK6KBCeZjNDA4/view?usp=sharing"
+          <a href="https://drive.google.com/file/d/1p2t4zrfsgjTkvruYFX2Ia2fL6O77Ygyu/view?usp=drive_link"
             download="My_CV.pdf">
             <button
               class=" md:block px-[20px] hover:text-[#1c1c1c] text-[16px] py-[12px]  rounded-[10px] border-[2.5px] border-[#6886C5] hover:bg-[#6886c5] ">Download
@@ -195,7 +196,7 @@
 
               <div class="items-center">
 
-                <a href="https://drive.google.com/file/d/1b7-AwFl-ii4PSKJyjF_nK6KBCeZjNDA4/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1p2t4zrfsgjTkvruYFX2Ia2fL6O77Ygyu/view?usp=drive_link"
                   download="My_CV.pdf">
                   <button
                     class=" md:block px-[20px] w-[143px] text-[#1c1c1c] text-[16px] py-[12px] bg-[#6886C5] rounded-[10px] border-[2.5px] border-[#6886C5] hover:bg-white ">Download
@@ -458,14 +459,14 @@
         <!-- div for form  -->
 
         <div class="flex items-center w-full max-w-xl">
-          <form
+          <!-- <form
             class="w-full border-[1px] rounded-[15px] border-gray-50 py-[40px] px-[40px] flex flex-col gap-[25px] shadow-2xl">
 
             <div class="gap-[20px] md:flex xl:flex space-y-4 md:space-y-0 ">
               <div class="flex  w-full">
                 <div class=" flex flex-col w-full gap-[5px]">
                   <label class="">First Name</label>
-                  <input type="text" placeholder="John" class=" peer border-b-[2px] border-[#212121x]">
+                  <input type="text"  class=" peer border-b-[2px] border-[#212121x]">
                 </div>
               </div>
 
@@ -509,7 +510,66 @@
             <button
               class=" md:block px-[20px] w-[100px] text-[#1c1c1c] text-[16px] py-[12px] bg-[#6886C5] rounded-[10px] border-[2.5px] border-[#6886C5] hover:bg-white ">Submit</button>
 
-          </form>
+          </form> -->
+
+
+          <form id="contactForm"
+  class="w-full border-[1px] rounded-[15px] border-gray-200 py-[40px] px-[40px] flex flex-col gap-[25px] shadow-2xl">
+
+  <div class="gap-[20px] md:flex xl:flex space-y-4 md:space-y-0">
+    <div class="flex w-full">
+      <div class="flex flex-col w-full gap-[5px]">
+        <label>First Name</label>
+        <input type="text" name="firstName" required  placeholder="John"
+          class="border-b-[2px] border-[#212121] outline-none">
+      </div>
+    </div>
+
+    <div class="flex w-full">
+      <div class="flex flex-col w-full gap-[5px]">
+        <label>Last Name</label>
+        <input type="text" name="lastName" required 
+          placeholder="Deo" class="border-b-[2px] border-[#212121] outline-none">
+      </div>
+    </div>
+  </div>
+
+  <div class="gap-[20px] md:flex xl:flex space-y-4 md:space-y-0">
+    <div class="flex w-full">
+      <div class="flex flex-col w-full gap-[5px]">
+        <label>Email Address</label>
+        <input type="email" name="email" required
+          placeholder="JohnDeo@Gmail.com" class="border-b-[2px] border-[#212121] outline-none">
+      </div>
+    </div>
+
+    <div class="flex w-full">
+      <div class="flex flex-col w-full gap-[5px]">
+        <label>Phone Number</label>
+        <input type="text" name="phone"
+          placeholder="+91 123 4567 890" class="border-b-[2px] border-[#212121] outline-none">
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-[5px]">
+    <label>Subject</label>
+    <input type="text" name="subject" required
+     placeholder="Subject" class="border-b-[2px] border-[#212121] outline-none">
+  </div>
+
+  <div class="flex flex-col gap-[5px]">
+    <label>Message</label>
+    <textarea name="message" rows="4" required
+     placeholder="Message" class="border-b-[2px] border-[#212121] outline-none resize-none"></textarea>
+  </div>
+
+  <button type="submit"
+    class="px-[20px] w-[120px] text-[#1c1c1c] text-[16px] py-[12px] bg-[#6886C5] rounded-[10px] border-[2.5px] border-[#6886C5] hover:bg-white">
+    Submit
+  </button>
+
+</form>
         </div>
       </div>
     </div>
@@ -533,18 +593,43 @@
         <p>there</p>
       </div>
 
-      <a href="mailto:Work.shubham1601@gmail.com">
-        <button
-          class="md:block px-[20px] h-[50px] w-[110px] text-[#1c1c1c] text-[16px] py-[12px] bg-[#6886C5] rounded-[10px] border-[2.5px] border-[#6886C5] hover:bg-white">
-          Hire Me
-        </button>
-      </a>
+      <a href="mailto:Work.Shubham1601@gmail.com"
+      class="hidden md:block px-[20px] text-[#1c1c1c] text-[16px] py-[12px] bg-[#6886C5] rounded-[10px] border-[2.5px] border-[#6886C5] hover:bg-white ">Hire
+      me</a>
 
     </div>
 
 
 
   </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("sQKzwSjmzKEsreOiD");
+
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_q9epbik",
+      "template_2917pke",
+      this
+    ).then(
+      function () {
+        alert("Message sent successfully 🚀");
+        form.reset();
+      },
+      function (error) {
+        alert("Failed to send message ❌");
+        console.log(error);
+      }
+    );
+  });
+</script>
 
 
 </body>
